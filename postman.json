@@ -1,0 +1,140 @@
+
+{
+    "info": {
+        "name": "Events CRUD API",
+        "_postman_id": "c9b63f3a-4d7c-4e6c-8f6b-123456789abc",
+        "description": "Coleção com as rotas CRUD para Events com base na URL http://localhost:3000/events",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Listar Eventos",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/events",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "events"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Criar Evento",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Exemplo Evento\",\n    \"description\": \"Descrição do evento\",\n    \"address\": \"Endereço do evento\",\n    \"map_url\": \"http://maps.example.com\",\n    \"date\": \"2025-04-21\",\n    \"modality\": \"Presencial\",\n    \"cancellation_policy\": \"Política de cancelamento\",\n    \"participant_edition_policy\": \"Política de edição de participantes\",\n    \"ticket_type\": \"Tipo de ingresso\",\n    \"ticket_price\": 100.0,\n    \"ticket_quantity\": 50\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/events",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "events"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Mostrar Evento",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/events/:id",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "events",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Atualizar Evento",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Evento Atualizado\",\n    \"description\": \"Descrição atualizada\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/events/:id",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "events",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Deletar Evento",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/events/:id",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "events",
+                        ":id"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
