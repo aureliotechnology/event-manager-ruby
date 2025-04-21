@@ -287,12 +287,12 @@ development:
     # validate_update_replace: false
 
 
-test:
-  clients:
-    default:
-      uri: mongodb://mongo-test:27019/evemts_test
-      # database: evemts_test
-      # options:
-      #   read:
-      #     mode: :primary
-      #   max_pool_size: 1
+# test:
+#   clients:
+#     default:
+#       uri: mongodb://mongo-test:27019/evemts_test
+#       # database: evemts_test
+#       # options:
+#       #   read:
+#       #     mode: :primary
+#       #   max_pool_size: 1
