@@ -291,8 +291,8 @@ test:
   clients:
     default:
       uri: mongodb://localhost:27019/evemts_test
-      database: evemts_test
-      options:
-        read:
-          mode: :primary
-        max_pool_size: 1
+      # database: evemts_test
+      # options:
+      #   read:
+      #     mode: :primary
+      #   max_pool_size: 1
