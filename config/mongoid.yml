@@ -290,7 +290,7 @@ development:
 test:
   clients:
     default:
-      uri: mongodb://localhost:27019/evemts_test
+      uri: mongodb://mongo-test:27019/evemts_test
       # database: evemts_test
       # options:
       #   read:
