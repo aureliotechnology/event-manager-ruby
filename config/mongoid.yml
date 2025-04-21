@@ -290,9 +290,8 @@ development:
 test:
   clients:
     default:
+      uri: mongodb://localhost:27019/evemts_test
       database: evemts_test
-      hosts:
-        - localhost:27019
       options:
         read:
           mode: :primary
